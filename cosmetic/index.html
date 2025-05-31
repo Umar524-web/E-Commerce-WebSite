@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="login-page">
+        <h2>Login Page</h2>
+        <input type="text" id="login-username" placeholder="Enter Username" required>
+        <input type="password" id="login-password" placeholder="Enter Password" required>
+        <button id="login-btn">Login</button>
+        <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+    </div>
+
+    <div class="container hidden" id="register-page">
+        <h2>Register Page</h2>
+        <input type="text" id="register-username" placeholder="Choose Username" required>
+        <input type="email" id="register-email" placeholder="Enter Email" required>
+        <input type="password" id="register-password" placeholder="Choose Password" required>
+        <button id="register-btn">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+    </div>
+
+    <script>
+        // Get page elements
+        const loginPage = document.getElementById("login-page");
+        const registerPage = document.getElementById("register-page");
+        const showRegister = document.getElementById("show-register");
+        const showLogin = document.getElementById("show-login");
+        const loginBtn = document.getElementById("login-btn");
+        const registerBtn = document.getElementById("register-btn");
+
+        // Switch to Registration Page
+        showRegister.addEventListener("click", () => {
+            loginPage.classList.add("hidden");
+            registerPage.classList.remove("hidden");
+        });
+
+        // Switch to Login Page
+        showLogin.addEventListener("click", () => {
+            registerPage.classList.add("hidden");
+            loginPage.classList.remove("hidden");
+        });
+
+        // Login Button Click
+        loginBtn.addEventListener("click", () => {
+            const username = document.getElementById("login-username").value;
+            const password = document.getElementById("login-password").value;
+
+            if (username && password) {
+                alert("Login Successful!");
+                window.location.href = "home.html"; // Redirect to dashboard or homepage
+            } else {
+                alert("Please enter valid credentials.");
+            }
+        });
+
+        // Register Button Click
+        registerBtn.addEventListener("click", () => {
+            const username = document.getElementById("register-username").value;
+            const email = document.getElementById("register-email").value;
+            const password = document.getElementById("register-password").value;
+
+            if (username && email && password) {
+                alert("Registration Successful! Please login.");
+                registerPage.classList.add("hidden");
+                loginPage.classList.remove("hidden");
+            } else {
+                alert("Please fill all fields.");
+               
+            }
+        });
+    </script>
+
+</body>
+</html>

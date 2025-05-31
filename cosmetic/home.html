@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXEBeauty - Premium Cosmetics Store</title>
+    <meta name="description" content="Premium cosmetics and beauty products" />
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="home.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <h1>LUXE<span>Beauty</span></h1>
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">Makeup</a></li>
+              <li><a href="#">Skincare</a></li>
+              <li><a href="#">Haircare</a></li>
+              <li><a href="#">Fragrance</a></li>
+            </ul>
+          </nav>
+          <div class="nav-icons">
+            <a href="#" id="search-btn"><i class="fas fa-search"></i></a>
+            <a href="#" id="wishlist-btn"><i class="fas fa-heart"></i></a>
+            <a href="#" id="user-btn"><i class="fas fa-user"></i></a>
+            <a href="#" id="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-count">0</span>
+            </a>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="tag">New Collection</span>
+          <h1>Discover Your Perfect <span>Beauty</span> Routine</h1>
+          <p>Premium cosmetics and skincare products for every skin type. Elevate your beauty regimen with our curated collection.</p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn btn-outline">New Arrivals</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="container">
+        <div class="section-title">
+          <h2>Shop by Category</h2>
+          <p>Explore our wide range of beauty products organized by category to find exactly what you're looking for.</p>
+        </div>
+        <div class="category-container">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1599305090598-fe179d501226?q=80&w=1974&auto=format&fit=crop" alt="Makeup">
+            <div class="category-info">
+              <h3>Makeup</h3>
+              <a href="#">Shop Now <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1570554886111-e80fcca6a029?q=80&w=1974&auto=format&fit=crop" alt="Skincare">
+            <div class="category-info">
+              <h3>Skincare</h3>
+              <a href="#">Shop Now <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1522337678023-16bf903f6c3f?q=80&w=1974&auto=format&fit=crop" alt="Haircare">
+            <div class="category-info">
+              <h3>Haircare</h3>
+              <a href="#">Shop Now <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1617897903246-719242758050?q=80&w=1974&auto=format&fit=crop" alt="Fragrance">
+            <div class="category-info">
+              <h3>Fragrance</h3>
+              <a href="#">Shop Now <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Bestselling Products</h2>
+            <p>Our most popular products based on sales. Updated daily.</p>
+          </div>
+          <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-container" id="product-container">
+          <!-- Products will be added dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Customers Say</h2>
+          <p>Read testimonials from our satisfied customers about their experiences with our products.</p>
+        </div>
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"I've been using the Hydra Boost Serum for a month now, and my skin has never looked better. It's so hydrating without feeling greasy. Will definitely repurchase!"</p>
+            <div class="testimonial-author">
+              <div class="author-initial">A</div>
+              <div class="author-info">
+                <h4>Aisha K.</h4>
+                <span>Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"The Velvet Matte Lipstick is truly amazing! The color payoff is incredible and it lasts all day without drying out my lips. This has become my go-to lipstick."</p>
+            <div class="testimonial-author">
+              <div class="author-initial">B</div>
+              <div class="author-info">
+                <h4>Bhavya S.</h4>
+                <span>Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Precision Eyeliner has changed my makeup game completely. The fine tip makes it so easy to create precise lines. The formula is waterproof and doesn't smudge at all!"</p>
+            <div class="testimonial-author">
+              <div class="author-initial">C</div>
+              <div class="author-info">
+                <h4>Charu M.</h4>
+                <span>Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Join Our Beauty Community</h2>
+        <p>Subscribe to our newsletter for exclusive offers, beauty tips, and first access to new product launches.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address">
+          <button type="submit" class="btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>LUXE<span>Beauty</span></h3>
+            <p>Discover premium beauty products with our curated selection of luxury cosmetics and skincare essentials.</p>
+            <div class="footer-newsletter">
+              <h4>Stay Updated</h4>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#">Makeup</a></li>
+              <li><a href="#">Skincare</a></li>
+              <li><a href="#">Haircare</a></li>
+              <li><a href="#">Fragrance</a></li>
+              <li><a href="#">New Arrivals</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Account</h4>
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#" id="order-history-link">Order History</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Track Order</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> 123 Beauty Lane, Fashion District, City, 123456</p>
+              <p><i class="fas fa-phone"></i> +91 9876543210</p>
+              <p><i class="fas fa-envelope"></i> support@luxebeauty.com</p>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© <span id="current-year"></span> LUXEBeauty. All rights reserved.</p>
+          <div class="payment-methods">
+            <img src="https://via.placeholder.com/40x25" alt="Payment - Visa">
+            <img src="https://via.placeholder.com/40x25" alt="Payment - Mastercard">
+            <img src="https://via.placeholder.com/40x25" alt="Payment - PayPal">
+            <img src="https://via.placeholder.com/40x25" alt="Payment - Google Pay">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Shopping Cart</h3>
+        <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be added dynamically via JavaScript -->
+        <div class="empty-cart" id="empty-cart">
+          <i class="fas fa-shopping-cart"></i>
+          <p>Your cart is empty</p>
+          <a href="#products" class="btn" onclick="closeCart()">Shop Now</a>
+        </div>
+      </div>
+      <div class="cart-footer" id="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-amount">₹0.00</span>
+        </div>
+        <a href="#" class="btn" id="checkout-btn">Checkout</a>
+      </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Checkout</h3>
+          <button class="close-modal" id="close-checkout"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="checkout-form">
+            <div class="form-section">
+              <h4>Shipping Address</h4>
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name">
+              </div>
+              <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" placeholder="Enter your mobile number">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" placeholder="Enter your full address"></textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" id="city" placeholder="City">
+                </div>
+                <div class="form-group">
+                  <label for="pincode">Pincode</label>
+                  <input type="text" id="pincode" placeholder="Pincode">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" placeholder="State">
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h4>Payment Method</h4>
+              <div class="payment-methods-list">
+                <div class="payment-method">
+                  <input type="radio" id="upi" name="payment-method" value="upi" checked>
+                  <label for="upi">UPI (Google Pay/PhonePe/Paytm)</label>
+                </div>
+                <div class="payment-method">
+                  <input type="radio" id="card" name="payment-method" value="card">
+                  <label for="card">Credit/Debit Card</label>
+                </div>
+                <div class="payment-method">
+                  <input type="radio" id="cod" name="payment-method" value="cod">
+                  <label for="cod">Cash on Delivery</label>
+                </div>
+              </div>
+
+              <div class="payment-details" id="upi-details">
+                <div class="form-group">
+                  <label for="upi-id">UPI ID</label>
+                  <input type="text" id="upi-id" placeholder="yourname@upi">
+                </div>
+              </div>
+
+              <div class="payment-details" id="card-details" style="display: none;">
+                <div class="form-group">
+                  <label for="card-number">Card Number</label>
+                  <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" placeholder="MM/YY">
+                  </div>
+                  <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="card-name">Name on Card</label>
+                  <input type="text" id="card-name" placeholder="Enter name as on card">
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout-summary">
+              <h4>Order Summary</h4>
+              <div class="checkout-items" id="checkout-items">
+                <!-- Checkout items will be added dynamically via JavaScript -->
+              </div>
+              <div class="checkout-total">
+                <div class="total-row">
+                  <span>Subtotal:</span>
+                  <span id="checkout-subtotal">₹0.00</span>
+                </div>
+                <div class="total-row">
+                  <span>Shipping:</span>
+                  <span id="checkout-shipping">₹40.00</span>
+                </div>
+                <div class="total-row total-final">
+                  <span>Total:</span>
+                  <span id="checkout-total">₹0.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline" id="back-to-cart">Back to Cart</button>
+          <button class="btn" id="place-order-btn">Place Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div class="modal" id="order-success-modal">
+      <div class="modal-content success-content">
+        <div class="success-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Order Placed Successfully!</h3>
+        <p>Your order has been received and is being processed.</p>
+        <p class="order-id">Order ID: <span id="success-order-id">LB12345</span></p>
+        <div class="modal-footer">
+          <button class="btn" id="continue-shopping">Continue Shopping</button>
+          <button class="btn btn-outline" id="view-orders">View My Orders</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Order History Modal -->
+    <div class="modal" id="order-history-modal">
+      <div class="modal-content order-history-content">
+        <div class="modal-header">
+          <h3>Your Order History</h3>
+          <button class="close-modal" id="close-order-history"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="order-list" id="order-list">
+            <!-- Orders will be added dynamically via JavaScript -->
+            <div class="empty-orders" id="empty-orders">
+              <i class="fas fa-shopping-bag"></i>
+              <p>You haven't placed any orders yet</p>
+              <a href="#products" class="btn" onclick="closeOrderHistory()">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript Links -->
+    <script src="script.js"></script>
+  </body>
+</html>
